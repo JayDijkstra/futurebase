@@ -10,7 +10,7 @@
 <ion-content class="chats-page-content">
   <ion-list class="chats">
     <ion-item-sliding *ngFor="let signal of signals | async">
-      <button ion-item class="chat">
+      <button ion-item class="chat" (click)showSignals(signal)>
         <img class="chat-picture" [src]="signal.picture">
         <div class="chat-info">
           <h2 class="chat-title">{{signal.title}}</h2>

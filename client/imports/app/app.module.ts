@@ -3,13 +3,15 @@ import {BrowserModule } from '@angular/platform-browser';
 import {IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
 import { HomePage } from '../pages/home/home';
 import { SignalPage } from '../pages/signals/signals';
+import { ImagesPage } from '../pages/images/images';
 import { FutureBase } from './app.component';
 
 @NgModule({
   declarations: [
     FutureBase,
     HomePage,
-    SignalPage
+    SignalPage,
+    ImagesPage
   ],
   imports: [
     IonicModule.forRoot(FutureBase),
@@ -19,7 +21,8 @@ import { FutureBase } from './app.component';
   entryComponents: [
     FutureBase,
     HomePage,
-    SignalPage
+    SignalPage,
+    ImagesPage
   ],
   providers: [
     {provide: ErrorHandler, useClass: IonicErrorHandler}

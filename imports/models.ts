@@ -6,13 +6,14 @@ export interface Signal {
   _id?: string;
   title?: string;
   picture?: string;
-  lastMessage?: Message;
+  lastMessage?: Image;
 }
 
-export interface Message {
+export interface Image {
   _id?: string;
-  chatId?: string;
+  signalId?: string;
   content?: string;
   createdAt?: Date;
+  ownership? : string;
   type?: MessageType
 }
